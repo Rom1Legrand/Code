@@ -62,3 +62,37 @@ print(even_numbers_reshaped)
 np.log(even_numbers_reshaped)
 
 #12
+vec=np.arange(0,100,1)
+print(vec)
+
+#13
+matrix = vec.reshape(10,10)
+print(matrix)
+
+#14
+tensor = matrix.reshape(-1,5,5)
+print(tensor)
+
+#15
+tensor15=tensor[0]
+print(tensor15)
+
+#16
+tensor16=tensor[0,1,2]
+print(tensor16)
+
+#17
+tensor17=tensor[0,:,2]
+print(tensor17)
+
+#18
+tensor18=tensor[0,1,:]
+print(tensor18)
+
+#19
+tensor_reshaped19=tensor.reshape(10, 10)
+print(tensor_reshaped19)
+
+#20
+tensor_reshaped20=tensor.reshape(100)
+print(tensor_reshaped20)
